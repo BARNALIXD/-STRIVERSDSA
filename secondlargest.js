@@ -1,6 +1,8 @@
 function secondlargest (arr){
     if (arr.length < 2)
         return -1;
+
+    
     let large = Infinity;
     let second_large = Infinity;
 
@@ -11,6 +13,7 @@ function secondlargest (arr){
         } else if (arr[1] > second_large && arr[i] !== large){
             second_large = arr[i];
         }
+    }
     return second_large;
 }
 const arr = [1,2,4,7,7,5];
